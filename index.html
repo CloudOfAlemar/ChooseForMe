@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/4982c8e01d.js" crossorigin="anonymous"></script>
+
+  <title>Choose For Me</title>
+</head>
+<body>
+  
+  <div class="chooseforme-component">
+
+    <!-- Cover Page -->
+    <section class="Cover-Page page">
+
+      <h1 class="C-P--title">
+        <span class="alt-color">Choose</span>
+        For Me
+      </h1>
+
+      <div class="C-P--illustration-area">
+        <img class="C-P--illustration" src="img/6342523.jpg" 
+          alt="Illustration of someone thinking.">
+      </div>
+
+      <p class="C-P--cta-description">
+        <span class="C-P--cta-heading">
+          Can't decide on something?
+        </span>
+        Create a list of things you can't decide on or 
+        view the lists you've created.
+      </p>
+
+      <div class="C-P--button-area">
+        <button class="C-P--create-list-button">
+          Create a list
+        </button>
+        <button class="C-P--view-lists-button">
+          View lists
+        </button>
+      </div>
+
+    </section>
+
+    <!-- Create List Page -->
+    <section class="Create-List-Page page hide-page">
+      <h2 class="C-L-P--title CU-L-P--title">
+        Create
+        <span class="alt-color">a new</span>
+        list
+      </h2>
+
+      <h3 class="C-L-P--list-title-heading CU-L-P--list-title-heading">
+        List title
+      </h3>
+      <input type="text" class="C-L-P--list-title-input CU-L-P--list-title-input"
+        placeholder="Give your list a title" maxlength="30">
+
+      <h3 class="C-L-P--add-item-heading CU-L-P--add-item-heading">
+        Add list item
+      </h3>
+      <div class="C-L-P--add-item-area CU-L-P--add-item-area">
+        <input type="text" class="C-L-P--add-item-input CU-L-P--add-item-input"
+          placeholder="Create new list item" maxlength="20">
+        <button class="C-L-P--add-item-button CU-L-P--add-item-button">
+          <i class="fa-regular fa-plus"></i>
+        </button>
+      </div>
+
+      <h3 class="C-L-P--preview-heading CU-L-P--preview-heading">List Items Preview</h3>
+      <ul class="C-L-P--preview-area CU-L-P--preview-area"></ul>
+
+      <div class="C-L-P--button-area CU-L-P--button-area">
+        <button class="C-L-P--create-list-back-button CU-L-P--back-button">Back</button>
+        <button class="C-L-P--create-list-button CU-L-P--confirm-button">Create</button>
+      </div>
+    </section>
+
+    <!-- Update List Page -->
+    <section class="Update-List-Page page hide-page">
+      <h2 class="U-L-P--title CU-L-P--title">
+        Update
+        <span class="alt-color">list</span>
+      </h2>
+
+      <h3 class="U-L-P--list-title-heading CU-L-P--list-title-heading">List title</h3>
+      <input type="text" class="U-L-P--list-title-input CU-L-P--list-title-input"
+             placeholder="Update your list title">
+      
+      <h3 class="U-L-P--add-item-heading CU-L-P--add-item-heading">
+        Add list item
+      </h3>
+      <div class="U-L-P--add-item-area CU-L-P--add-item-area">
+        <input type="text" class="U-L-P--add-item-input CU-L-P--add-item-input"
+          placeholder="New list item">
+        <button class="U-L-P--add-item-button CU-L-P--add-item-button">
+          <i class="fa-regular fa-plus"></i>
+        </button>
+      </div>
+
+      <h3 class="U-L-P--preview-heading CU-L-P--preview-heading">
+        List Items Preview
+      </h3>
+      <ul class="U-L-P--preview-area CU-L-P--preview-area"></ul>
+
+      <div class="U-L-P--button-area CU-L-P--button-area">
+        <button class="U-L-P--update-list-back-button CU-L-P--back-button">Back</button>
+        <button class="U-L-P--update-list-button CU-L-P--confirm-button">Update</button>
+      </div>
+    </section>
+
+    <!-- Lists Page -->
+    <section class="Lists-Page page hide-page">
+      <h2 class="L-P--title">
+        Your
+        <span class="alt-color">Lists</span>
+      </h2>
+      <p class="L-P--sub-heading">
+        Select a list, then choose an option.
+      </p>
+
+      <div class="L-P--list-area"></div>
+
+      <div class="L-P--buttons-area">
+        <button class="L-P--back-button">Back</button>
+        <button class="L-P--chooseforme-button">Choose</button>
+      </div>
+    </section>
+
+    <!-- Random Pick Page -->
+    <section class="Random-Pick-Page page hide-page">
+      <div class="R-P-P--choice-display">Blaze Pizza</div>
+      <button class="R-P-P--back-button">Back</button>
+    </section>
+  </div>
+
+<!-- Custom Javascript File -->
+<script src="script.js"></script>
+</body>
+</html>

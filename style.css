@@ -1,0 +1,447 @@
+ 
+
+html, button, input {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: .625rem;
+}
+
+h1, h2, h3, h4,
+p, ul, body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+/* ================================================ */
+/* Choose For Me Component */
+/* ================================================ */
+.chooseforme-component {
+  width: 320px;
+  height: 650px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  border: 3px solid #01a3b0;
+  border-radius: 10px;
+  background-color: #fefefe;
+  transform: translateX( 0 );
+  transition: transform 750ms;
+}
+
+/* ================================================ */
+/* Cover Page */
+/* ================================================ */
+
+.Cover-Page {
+  z-index: 1;
+}
+
+.C-P--title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.alt-color {
+  color: #6f0ef4;
+}
+
+.C-P--illustration-area {
+  margin-bottom: 1.5rem;
+}
+
+.C-P--illustration {
+  display: block;
+  width: 100%;
+}
+
+.C-P--cta-description {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #858585;
+}
+
+.C-P--cta-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: .5rem;
+  color: black;
+}
+
+.C-P--create-list-button,
+.C-P--view-lists-button {
+  display: block;
+  width: 200px;
+  padding: 8px 0;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.C-P--create-list-button {
+  margin-bottom: 1rem;
+  background-color: #01a3b0;
+  color: #fefefe;
+}
+
+.C-P--view-lists-button {
+  border: 2px solid #01a3b0;
+  background-color: #fefefe;
+  color: #01a3b0;
+}
+
+/* ================================================ */
+/* Create / Update List Page */
+/* ================================================ */
+
+.CU-L-P--title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.CU-L-P--list-title-heading,
+.CU-L-P--add-item-heading,
+.CU-L-P--preview-heading {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.CU-L-P--list-title-input,
+.CU-L-P--add-item-input,
+.CU-L-P--list-item {
+  font-weight: 500;
+}
+
+.CU-L-P--list-title-input,
+.CU-L-P--add-item-input {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  height: 35px;
+}
+
+.CU-L-P--list-title-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: #01a3b0;
+  padding: 0px 15px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 3px #858585;
+}
+
+.CU-L-P--list-title-input,
+.CU-L-P--list-title-input::placeholder {
+  color: #fefefe;
+}
+
+.CU-L-P--add-item-area {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.CU-L-P--add-item-input {
+  width: 70%;
+  border-radius: 50px;
+  padding: 0 15px;
+  margin-right: 5px;
+  background-color: #01a3b0;
+  color: #fefefe;
+  box-shadow: 0px 2px 3px #858585;
+  width: 85%;
+}
+
+.CU-L-P--add-item-input::placeholder {
+  color: #fefefe;
+}
+
+.CU-L-P--add-item-button,
+.CU-L-P--list-item-delete-button {
+  color: #fefefe;
+  background-color: #6f0ef4;
+  box-shadow: 0px 2px 3px #858585;
+}
+
+.CU-L-P--add-item-button {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+}
+
+.CU-L-P--preview-area {
+  height: 300px;
+  border-radius: 10px;
+  padding: 0 10px 10px;
+  margin-bottom: 1.5rem;
+  overflow: auto;
+  background-color: #01a3b0;
+  box-shadow: 0px 2px 3px #858585;
+}
+
+.CU-L-P--list-item-area {
+  background-color: #fefefe;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CU-L-P--list-item {
+  font-size: 1.3rem;
+  color: #858585;
+}
+
+.CU-L-P--list-item-delete-button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.CU-L-P--list-item-delete-icon {
+  padding: 8px;
+}
+
+.CU-L-P--button-area {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX( -50% );
+  width: 85%;
+}
+
+.CU-L-P--back-button,
+.CU-L-P--confirm-button {
+  font-size: 1.5rem;
+  width: 115px;
+  padding: 6px 10px;
+  border-radius: 50px;
+  color: #fefefe;
+  box-shadow: 0px 2px 3px #858585;
+}
+
+.CU-L-P--back-button {
+  background-color: #6f0ef4;
+}
+
+.CU-L-P--confirm-button {
+  background-color: #01a3b0;
+}
+
+/* ================================================ */
+/* Create List Page */
+/* ================================================ */
+
+.Create-List-Page {
+  z-index: 2;
+}
+
+/* ================================================ */
+/* Update List Page */
+/* ================================================ */
+
+.Update-List-Page {
+  z-index: 4;
+}
+
+/* ================================================ */
+/* Lists Page */
+/* ================================================ */
+
+.Lists-Page {
+  z-index: 3;
+}
+
+.L-P--title {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.L-P--sub-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.L-P--list-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  height: 450px;
+  margin-bottom: 1.5rem;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+.L-P--list-box {
+  position: relative;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+  background-color: #6f0ef4;
+  color: #fefefe;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 3px #858585;
+  transition: transform 250ms;
+}
+
+.L-P--list-box-title {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 90%;
+  transform: translate( -50%, -50% );
+  text-align: center;
+  pointer-events: none;
+}
+
+.L-P--list-box-edit-button,
+.L-P--list-box-delete-button {
+  position: absolute;
+  padding: 0;
+  transition: 350ms;
+  background-color: #01a3b0;
+  color: #fefefe;
+}
+
+/* transform: translate( -100%, 100% ) for edit button / create class to toggle */
+/* also for delete button */
+
+.L-P--list-box-edit-button {
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0px 8px 0 0;
+}
+
+.L-P--list-box-delete-button {
+  bottom: 0px;
+  right: 0px;
+  border-radius: 8px 0px 0px 0px;
+}
+
+.L-P--list-box-icon {
+  font-size: 1.8rem;
+  padding: 12px 15px;
+}
+
+.L-P--buttons-area {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX( -50% );
+  width: 85%;
+}
+
+.L-P--back-button,
+.L-P--chooseforme-button {
+  font-size: 1.5rem;
+  width: 115px;
+  padding: 6px 10px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 3px #858585;
+}
+
+.L-P--back-button {
+  background-color: #6f0ef4;
+  color: #fefefe;
+}
+
+.L-P--chooseforme-button {
+  background-color: #01a3b0;
+  color: #fefefe;
+  opacity: .5;
+  transition: 250ms;
+}
+
+/* ================================================ */
+/* Random Pick Page */
+/* ================================================ */
+
+.Random-Pick-Page {
+  z-index: 5;
+}
+
+.R-P-P--choice-display {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 200px;
+  transform: scale( 0 ) rotate( 0 );
+  width: 100%;
+  transition: transform 2500ms;
+  color: #6f0ef4;
+}
+
+.roulette {
+  transform: scale( 1 ) rotate( 3600deg);
+}
+
+.R-P-P--back-button {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX( -50% );
+  font-size: 1.5rem;
+  width: 115px;
+  padding: 6px 10px;
+  border-radius: 50px;
+  background-color: #6f0ef4;
+  color: #fefefe;
+  box-shadow: 0px 2px 3px #858585;
+}
+
+/* ================================================ */
+/* Utilities */
+/* ================================================ */
+
+.hide-page {
+  transform: translateX( 100% );
+}
+
+.hide-list-box-edit-button {
+  transform: translateX( -100% );
+}
+
+.hide-list-box-delete-button {
+  transform: translateX( 100% );
+}
+
+.button-clickable {
+  opacity: 1;
+}
+
+.shrink-selected-list {
+  transform: scale( .9 );
+}
